@@ -1,4 +1,4 @@
-# Mathematical Modelling in Engineering  2025/2026
+# Mathematical Modelling in Engineering  2026/2027
 
 Course materials for Mathematical Modelling in Engineering 
 
