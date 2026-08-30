@@ -1,86 +1,80 @@
-# Setting Up and Using ChatGPT for This Course
+# Using ChatGPT in Mathematical Modelling in Engineering
 
-ChatGPT is used in this course as a mathematical-modelling mentor: it can explain methods, ask useful questions, criticize assumptions, review mathematics, suggest alternatives, and help with computation. It is not an authority and does not replace your responsibility for the model.
+This Project helps you become a better mathematical modeller. ChatGPT can teach, guide, question, review, and compute, but it is not an answer service or an authority.
 
-The basic rule is:
+> **AI contributes; you think, act, check, revise, and remain responsible.**
 
-> **Use AI deliberately. Keep the decisions yours. Check consequential claims. Disclose material assistance.**
+## 1. Set up the Project
 
-## 1. Create your course Project
+For individual learning and assessed work, normally use a **private** Project:
 
-1. In ChatGPT, create a new Project.
-2. Name it, for example, `Mathematical Modelling in Engineering`.
-3. Use this Project for course learning, permitted assignments, and project work.
-4. Start a separate chat for each substantial topic or outcome—for example, `Boundary-layer exercise`, `Cooling model review`, or `Project numerical verification`.
+1. Create a Project named **Mathematical Modelling in Engineering**.
+2. Paste **00_CHATGPT_PROJECT_INSTRUCTIONS.md** into Project Instructions.
+3. Add **01_COURSE_CONTEXT.md** as a Project source.
+4. Start a separate chat for each substantial task.
 
-A Project keeps its chats, instructions, and shared sources together. A separate chat for each task prevents unrelated arguments, files, and assumptions from becoming mixed.
+| File | Purpose |
+|---|---|
+| **00_CHATGPT_PROJECT_INSTRUCTIONS.md** | Governs how ChatGPT interacts with you |
+| **01_COURSE_CONTEXT.md** | Supplies course scope, methods, notation, and conventions |
 
-## 2. Put each item in the correct place
+Use an instructor-provided setup if directed. Use a shared Project only for intentionally collaborative or common work; do not place individual assessed or sensitive material there without authorization. See [Projects in ChatGPT](https://help.openai.com/en/articles/10169521-projects-in-chatgpt).
 
-| Item | Where to put it | Purpose |
+## 2. Choose the role
+
+There are no AI levels. The role depends on the intellectual task.
+
+| Role | ChatGPT contributes | You contribute |
 |---|---|---|
-| `00_CHATGPT_PROJECT_INSTRUCTIONS` | Copy its **entire contents** into the Project's **Instructions** or **Project instructions** field | Activates ChatGPT's mentoring behaviour across project chats |
-| `00_Course_AI_Policy.md` | Upload to the Project's **Sources** | Makes the course rules available throughout the Project |
-| Other instructor-provided course guides and recurring readings | Upload to **Sources** | Provides shared course context across chats |
-| One assignment statement, image, dataset, or temporary file | Attach to the relevant **chat** unless it will be reused across several chats | Keeps the shared Project context focused |
-| Your derivation, assumptions, code, or results | Paste or attach them in the chat where you want feedback | Allows ChatGPT to review your actual attempt |
-| Confidential, personal, proprietary, unpublished, or restricted material | **Do not upload it** without authorization | Protects privacy, intellectual property, and research data |
+| **Teacher** | Concepts, reasoning, derivations, hints, or an analogous example | Reconstruct and transfer the method |
+| **Modelling Mentor** | Questions and alternatives that expose modelling choices | Choose and justify the model |
+| **Critical Reviewer** | Focused criticism of assumptions, mathematics, code, or claims | Judge, revise, and explain |
+| **Computational Assistant** | Algorithms, implementation, debugging, experiments, or visualization | Establish the formulation, predict behaviour, and verify |
 
-Do not merely upload `00_CHATGPT_PROJECT_INSTRUCTIONS` as a source. Its contents must be pasted into the active Project Instructions field. Uploading the course policy does not activate the mentoring behaviour, and activating the mentoring behaviour does not give permission to use AI in an assessment.
+Name a role if useful; otherwise state your purpose clearly and ChatGPT should infer it.
 
-Interface labels may change slightly. The important distinction is:
+## 3. Work through the problem
 
-- **Project Instructions** control how ChatGPT should behave;
-- **Project Sources** provide documents that ChatGPT may consult;
-- **chat attachments** provide context needed only for one task.
+For substantial work, give your objective, available information, current attempt, and point of uncertainty. The interaction should follow an adaptive loop:
 
-## 3. Check the assessment status before using AI
+**diagnose → guide → you act → check → explain**.
 
-Every assessed activity has one of three statuses:
+ChatGPT should not immediately complete a target course problem merely because you request the answer. If you are stuck, help may escalate from a question or hint to a partial derivation, analogous example, guided derivation, and—after meaningful learning—a final synthesis. Direct questions about knowledge should still receive direct explanations.
 
-| Status | What it means |
-|---|---|
-| **AI-free** | Do not use generative AI for the activity. |
-| **AI-supported** | You lead the work; AI may explain, question, criticize, suggest, check, or help with code. |
-| **AI-integrated** | Substantial co-generation is allowed because supervising and evaluating AI is part of the task. |
+Useful prompts include:
 
-Task-specific instructions override the general policy. If a graded activity does not state its status, treat it as **AI-free** and ask the instructor. Private, ungraded study is normally AI-supported.
+- **Teacher:** “Explain the idea using an analogous example, then let me apply it here.”
+- **Modelling Mentor:** “Ask me the two most consequential questions before we choose equations.”
+- **Critical Reviewer:** “Identify the most consequential weakness, but let me repair it.”
+- **Computational Assistant:** “Before writing code, help me predict the result and design an independent check.”
 
-## 4. Begin with what you need
+You can also ask ChatGPT to expose assumptions, challenge a scale, compare validity regimes, find a limiting case, or give only the smallest useful next hint. Task instructions may prescribe a role sequence or evidence requirements; follow them.
 
-You do not need elaborate prompts or a compulsory template. State naturally what you are doing, what you have tried, and what kind of help you want.
+## 4. Add only relevant material
 
-| What you need | Example opening |
-|---|---|
-| **Learn a technique** | `Teach me why a regular perturbation expansion fails here. Begin with the small parameter and show one simpler example.` |
-| **Develop a model** | `I need to predict the cooling time. Here is my initial system boundary and assumptions. Ask me the two most important questions before we write equations.` |
-| **Review your work** | `Check my nondimensionalization. Identify the first consequential error, explain why it matters, and let me correct it.` |
-| **Compute** | `Here are my equations and finite-difference scheme. Help me produce readable Python code and design a convergence test.` |
+- Attach an assignment, image, or dataset to its task chat.
+- Paste your model, derivation, code, results, and assumptions when requesting feedback.
+- Add material as a Project source only when it should be reused across chats.
+- Keep unrelated tasks in separate chats.
+- Do not upload confidential, proprietary, personal, unpublished, or restricted material without authorization.
 
-You may name the mode, but this is optional. Useful requests include:
+## 5. Remain responsible
 
-- `Give me only a hint.`
-- `Ask one question at a time.`
-- `This is technique learning, not a modelling exercise; explain the method directly.`
-- `Review my work without rewriting it.`
-- `Show an analogous example, then let me solve this one.`
-- `Summarize what I have decided and what remains unverified.`
-- `Now give the next step and explain why it is valid.`
+ChatGPT output is not independent evidence. You must be able to:
 
-ChatGPT may ask for your attempt, question an assumption, or decline to provide a complete assigned solution. That behaviour is intentional. The aim is to improve your ability to formulate and defend the next step without AI.
+- reconstruct the reasoning and identify important assumptions;
+- distinguish the physical system, model, mathematical problem, algorithm, code, and output;
+- check units, signs, conditions, limiting cases, sensitivity, stability, convergence, and plausibility as relevant;
+- verify computations independently and validate the model against its real purpose;
+- inspect original sources for consequential facts, parameters, quotations, and citations;
+- explain the validity regime, limitations, and conclusion.
 
-## 5. Use the modelling map when it is relevant
+**The code runs** does not imply **the solution is correct**. ChatGPT agreeing with you does not make a claim true.
 
-For a modelling problem, remain aware of six broad questions:
+Before finishing, ask: Can I reconstruct this? Can I check it? Can I adapt it? Can I defend it?
 
-1. **Purpose and scope:** What must be predicted or decided, why, and within what system boundary?
-2. **Quantities and scales:** What quantities, units, data, and characteristic scales matter?
-3. **Model construction:** What assumptions, balance laws, constitutive relations, and conditions define the model?
-4. **Scaling and regimes:** Which dimensionless parameters and limiting regimes determine what may be neglected?
-5. **Solution and verification:** How will the model be solved, and how will the calculation be checked?
-6. **Validation and decision:** What evidence and uncertainties determine the justified conclusion and its validity limits?
+> **Do not optimize for obtaining the answer. Use the Project to become able to reach, test, understand, and defend the answer.**
 
-These questions are a map, not a form. You do not need to answer all six in every message. ChatGPT should infer what is already known and ask only the next useful question.
 
 ## Official interface reference
 
