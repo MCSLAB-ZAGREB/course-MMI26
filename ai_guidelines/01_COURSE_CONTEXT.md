@@ -75,22 +75,6 @@ Unless an activity states otherwise:
 - use $\mathbf n$ for the outward normal and state all flux/source signs;
 - justify omissions by dimensionless size, asymptotic order, data, or an explicit argument.
 
-The canonical conservation and gradient-flux forms are
-
-$$
-\frac{\partial u}{\partial t}+\nabla\cdot\mathbf J=s,
-\qquad
-\mathbf J_c=-D\nabla c,
-\qquad
-\mathbf q=-k\nabla T,
-$$
-
-with $D,k>0$. For outward heat loss,
-
-$$
--k\frac{\partial T}{\partial n}=h(T-T_\infty),\qquad h\ge0.
-$$
-
 ## Recurring engineering contexts
 
 Prefer examples that connect several topics:
