@@ -82,8 +82,6 @@ For a modelling problem, remain aware of six broad questions:
 
 These questions are a map, not a form. You do not need to answer all six in every message. ChatGPT should infer what is already known and ask only the next useful question.
 
-If you are learning a specific mathematical technique—such as perturbation theory, boundary layers, multiple scales, or Fourier methods—only the relevant questions apply. For asymptotic analysis, the important issues may instead be the small parameter, ordering, dominant balance, regular or singular character, uniform validity, breakdown, matching, and error.
-
 ## Official interface reference
 
 OpenAI's current Projects documentation explains that project instructions apply across project chats, shared files belong in Sources, and task-specific files may be attached to one chat: [Projects and chats](https://learn.chatgpt.com/docs/projects?surface=web).
