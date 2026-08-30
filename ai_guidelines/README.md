@@ -71,10 +71,6 @@ ChatGPT output is not independent evidence. You must be able to:
 
 **The code runs** does not imply **the solution is correct**. ChatGPT agreeing with you does not make a claim true.
 
-Before finishing, ask: Can I reconstruct this? Can I check it? Can I adapt it? Can I defend it?
-
-> **Do not optimize for obtaining the answer. Use the Project to become able to reach, test, understand, and defend the answer.**
-
 
 ## Official interface reference
 
