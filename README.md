@@ -24,7 +24,7 @@ course-OPM26/
 ├── .python-version    # Python version used by uv
 ├── .gitignore         # Files and folders ignored by Git
 │
-├── ai_policy/         # Guidelines and policies for using AI in the course
+├── ai_guidelines/     # Guidelines and policies for using AI in the course
 ├── codes/             # Numerical codes used in lectures
 ├── notebooks/         # Jupyter notebooks used in lectures
 ├── lectures/          # Handwritten Lecture notes
