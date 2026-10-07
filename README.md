@@ -16,7 +16,7 @@ This repository contains Jupyter notebooks, Python code, exercises, and supporti
 
 
 ```text
-course-OPM26/
+course-MMI26/
 ├── README.md          # Main repository description and instructions
 ├── LICENSE            # License for course materials and code
 ├── pyproject.toml     # Python project configuration and dependencies
@@ -51,7 +51,7 @@ uv --version
 Choose a folder where you keep course materials and run:
 
 ```bash
-git clone https://github.com/MCSLAB-ZAGREB/course-OPM26.git
+git clone https://github.com/MCSLAB-ZAGREB/course-MMI26.git
 cd course-OPM26
 ```
 
