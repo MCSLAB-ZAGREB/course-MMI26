@@ -52,7 +52,7 @@ Choose a folder where you keep course materials and run:
 
 ```bash
 git clone https://github.com/MCSLAB-ZAGREB/course-MMI26.git
-cd course-OPM26
+cd course-MMI26
 ```
 
 ## Create the Python environment
