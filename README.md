@@ -27,7 +27,7 @@ course-MMI26/
 ├── ai_guidelines/     # Guidelines and policies for using AI in the course
 ├── codes/             # Numerical codes used in lectures
 ├── notebooks/         # Jupyter notebooks used in lectures
-├── lectures/          # Handwritten Lecture notes
+├── lectures/          # Lecture notes
 └── homework/          # Homework assignments
 ```
 
