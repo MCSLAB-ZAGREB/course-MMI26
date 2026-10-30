@@ -42,14 +42,15 @@ The process is iterative: failed checks or new evidence may require revising ear
 Students should learn to:
 
 - identify variables, parameters, units, data, and characteristic scales;
-- nondimensionalize ODE/PDE models and interpret dimensionless groups;
-- identify dominant balances and justify neglected terms quantitatively;
-- distinguish regular and singular perturbations, boundary layers, and multiple scales;
+- use vector analysis (gradient, divergence, the divergence theorem) to pass from integral to differential balance laws;
 - derive continuum models from conservation laws and constitutive closures;
-- derive and compare Fick diffusion, Fourier heat conduction, and Newton cooling;
-- use Fourier methods, fundamental solutions, and superposition;
-- recognize multiscale structure and limitations of effective models;
-- calibrate parameters against data and carry uncertainty through to conclusions;
+- nondimensionalize ODE/PDE models and interpret dimensionless groups such as the Péclet and Biot numbers;
+- identify dominant balances and justify neglected terms quantitatively;
+- distinguish regular and singular perturbations and construct boundary-layer approximations;
+- model advection, diffusion, and advection–diffusion of mass, and heat transfer, and compare Fick's law, Fourier's law, and Newton's law of cooling;
+- solve linear problems with Fourier series and separation of variables, self-similar and fundamental solutions, and superposition;
+- recognize multiple spatial scales, derive homogenized (effective) models, and state their limitations;
+- take a model from industrial practice through the whole pipeline, including calibration against data and uncertainty;
 - verify analytical and numerical calculations independently;
 - compare models, state validity and uncertainty, and defend conclusions.
 
@@ -57,25 +58,25 @@ Students should learn to:
 
 | Week | Canonical topic | Related textbook chapters (indicative) |
 |---:|---|---|
-| 1 | Dimensional analysis and characteristic quantities | 4 |
-| 2 | Nondimensionalization and scaling | 4; 5 for similarity scalings |
-| 3 | Dominant balance and regular perturbations | 6 |
-| 4 | Singular perturbations | 6, 7 |
-| 5 | Emergence of a boundary layer | 7 |
-| 6 | Multiple time scales | 9, 10 |
-| 7 | Continuum modelling: conservation and constitutive laws | 2; 1 for lumped rate models |
+| 1 | Introduction to mathematical modelling; dimensional analysis | 1, 4 |
+| 2 | Continuum modelling; vector analysis | 2 |
+| 3 | Conservation law; constitutive laws | 2 |
+| 4 | Regular perturbations; nondimensionalization of models | 4, 6 |
+| 5 | Singular perturbations; boundary layer | 6, 7 |
+| 6 | Advection and mass transport | 2 |
+| 7 | Mass diffusion; advection–diffusion models | 2; 7 for advection-dominated layers |
 | 8 | Midterm examination: Weeks 1–7 | — |
-| 9 | Fick’s law, Fourier’s law, and Newton’s law of cooling | 1, 2 |
-| 10 | Fourier method | No dedicated chapter; search the book |
-| 11 | Fundamental solutions and superposition | 5 |
-| 12 | Multiscale problems | 8, 11 |
-| 13 | Industrial modelling I: problem formulation | 12 |
-| 14 | Industrial modelling II: calibration, uncertainty, validation, decisions | Lectures |
-| 15 | Final examination: integrated modelling workflow | — |
+| 9 | Heat transfer | 2; 1 for lumped (Newton cooling) models |
+| 10 | Fourier series; method of separation of variables | No dedicated chapter; search the book |
+| 11 | Self-similar and fundamental solutions | 5 |
+| 12 | Multiple spatial scales; homogenization | 8, 11; search for homogenization |
+| 13 | A model from industrial practice | 12 |
+| 14 | A model from industrial practice | 12 |
+| 15 | Final examination | — |
 
-The chapter column is inferred from chapter titles, not from a section-by-section comparison with the lectures. Confirm each link by searching the textbook and do not force a match. Chapter 3 has no corresponding week.
+The chapter column is inferred from chapter titles, not from a section-by-section comparison with the lectures. Confirm each link by searching the textbook and do not force a match. Chapters 3, 9, and 10 have no corresponding week; 9 and 10 may still supply perturbation examples.
 
-Topics build on each other in this order. Practice for the midterm stays within Weeks 1–7; the final integrates the whole workflow.
+Topics build on each other in this order. Practice for the midterm stays within Weeks 1–7.
 
 ## Canonical distinctions and conventions
 
@@ -86,7 +87,7 @@ $$
 \neq\text{model solution}\neq\text{interpretation}\neq\text{decision}.
 $$
 
-Also distinguish data from assumptions, conservation laws from constitutive laws, regular from singular perturbations, formal expansions from justified approximations, numerical error from model discrepancy, and verification from validation.
+Also distinguish data from assumptions, conservation laws from constitutive laws, regular from singular perturbations, formal expansions from justified approximations, microscale from effective (homogenized) descriptions, numerical error from model discrepancy, and verification from validation.
 
 Unless an activity states otherwise:
 
@@ -102,16 +103,16 @@ Unless an activity states otherwise:
 
 Prefer examples that connect several topics:
 
-- cooling and heat conduction: scales, lumped/distributed models, boundary conditions, Fourier modes;
-- chemical or pollutant diffusion: conservation, diffusion length, kernels, and sources;
-- weakly perturbed oscillators and advection–diffusion: secular behaviour, multiple scales, and boundary layers;
-- layered, porous, composite, battery, drying, or manufacturing systems: effective behaviour, calibration, uncertainty, and validation.
+- cooling and heat conduction: scales, lumped/distributed models, boundary conditions, Fourier series and separation of variables;
+- chemical or pollutant transport: conservation, advection and diffusion, diffusion length, kernels, and sources;
+- advection-dominated transport: the Péclet number, regular versus singular limits, and boundary layers;
+- layered, porous, composite, battery, drying, or manufacturing systems: effective (homogenized) properties, calibration, uncertainty, and validation.
 
-Derive common engineering rules of thumb rather than assuming them, for example: lumped-capacitance cooling when the Biot number $\mathrm{Bi}=hL/k\ll1$; the diffusion length $\sqrt{Dt}$; boundary-layer thickness from a dominant balance. State where each rule fails.
+Derive common engineering rules of thumb rather than assuming them, for example: lumped-capacitance cooling when the Biot number $\mathrm{Bi}=hL/k\ll1$; the diffusion length $\sqrt{Dt}$; advection versus diffusion from the Péclet number $\mathrm{Pe}=UL/D$; a boundary-layer thickness of order $L/\mathrm{Pe}$ in steady advection–diffusion; the effective conductivity of a layered composite (arithmetic mean along the layers, harmonic mean across them). State where each rule fails.
 
 ## Course boundaries
 
-The assessed core is modelling judgement supported by analysis and transparent computation. This is not a comprehensive course in PDE theory, numerical analysis, programming, fluid mechanics, electromagnetics, optimization, or machine learning. Material beyond these boundaries, such as rigorous asymptotic theory or homogenization, is optional enrichment and should be labelled as such.
+The assessed core is modelling judgement supported by analysis and transparent computation. This is not a comprehensive course in PDE theory, numerical analysis, programming, fluid mechanics, electromagnetics, optimization, or machine learning. Material beyond these boundaries, such as rigorous asymptotic theory or the convergence theory of homogenization, is optional enrichment and should be labelled as such.
 
 Computation should test reasoning, not replace formulation. Before computing, establish the model, method, expected behaviour, and an independent check. A converged calculation may still solve an inadequate model.
 

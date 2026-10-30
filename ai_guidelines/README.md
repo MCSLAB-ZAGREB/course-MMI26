@@ -9,9 +9,9 @@ This Project helps you become a better mathematical modeller. ChatGPT can teach,
 For individual learning and assessed work, normally use a **private** Project:
 
 1. Create a Project named **Mathematical Modelling in Engineering**.
-2. Paste the whole of **00_CHATGPT_PROJECT_INSTRUCTIONS.md** into Project Instructions. It is about 7,850 characters, just within the 8,000-character limit, so do not add to it; put extra guidance in a source file instead.
+2. Paste the whole of **00_CHATGPT_PROJECT_INSTRUCTIONS.md** into Project Instructions. It is about 7,940 characters, just within the 8,000-character limit, so do not add to it; put extra guidance in a source file instead.
 3. Add these Project sources:
-   - **01_COURSE_CONTEXT.md**, under exactly this name, because the instructions refer to it;
+   - **COURSE_CONTEXT.md**, under exactly this name, because the instructions refer to it;
    - the lecture PDFs;
    - the textbook PDF: T. Witelski and M. Bowen, *Methods of Mathematical Modelling: Continuous Systems and Differential Equations* (Springer, 2015);
    - any assessment rules provided by the instructor.
@@ -20,7 +20,7 @@ For individual learning and assessed work, normally use a **private** Project:
 | File | Purpose |
 |---|---|
 | **00_CHATGPT_PROJECT_INSTRUCTIONS.md** | Governs how ChatGPT interacts with you |
-| **01_COURSE_CONTEXT.md** | Supplies course scope, weekly schedule, modelling pipeline, notation, conventions, and textbook chapter links |
+| **COURSE_CONTEXT.md** | Supplies course scope, weekly schedule, modelling pipeline, notation, conventions, and textbook chapter links |
 | **Lecture PDFs** | Give each week's content, terminology, worked examples, and expected level |
 | **Textbook PDF** | Adds derivations, alternative approaches, worked examples, and exercises |
 | **Assessment rules** (if provided) | State what ChatGPT may and may not do for assessed work |
@@ -50,7 +50,7 @@ For substantial work, give your objective, available information, current attemp
 
 ChatGPT should not immediately complete a target course problem, including a textbook exercise, merely because you request the answer. If you are stuck, help may escalate from a question or hint to a partial derivation, analogous example, guided derivation, and—after meaningful learning—a final synthesis. Direct questions about knowledge should still receive direct explanations.
 
-ChatGPT follows the semester order in **01_COURSE_CONTEXT.md**: it builds on weeks already covered and flags methods from later weeks. When preparing for an exam, say which weeks it covers; the midterm covers Weeks 1–7 and the final the integrated modelling workflow.
+ChatGPT follows the semester order in **COURSE_CONTEXT.md**: it builds on weeks already covered and flags methods from later weeks. When preparing for an exam, say which weeks it covers; the midterm (Week 8) covers Weeks 1–7, and the final examination is in Week 15.
 
 Useful prompts include:
 
@@ -66,7 +66,7 @@ You can also ask ChatGPT to expose assumptions, challenge a scale, compare valid
 The lectures define what each week covers; the textbook deepens it. ChatGPT can connect a lecture, slide, or document you upload in chat to the matching textbook sections, worked examples, and exercises, and tell you where they are.
 
 - Locations are given as chapter, section, example or exercise number, and page. PDF page numbers differ from the printed ones and should be labelled as such.
-- The week-to-chapter links in **01_COURSE_CONTEXT.md** are leads to confirm, not a fixed correspondence.
+- The week-to-chapter links in **COURSE_CONTEXT.md** are leads to confirm, not a fixed correspondence.
 - Where the textbook's notation or scalings differ, ChatGPT maps them onto course conventions, which take precedence.
 - Check any cited location yourself before relying on it. If ChatGPT cannot find something, it should say so rather than reconstruct it; paste the relevant excerpt instead.
 
@@ -74,7 +74,7 @@ Useful prompts include:
 
 - “Explain Lecture 5 and point me to the matching textbook sections and exercises.”
 - “Map the scaling in this textbook example onto our course notation.”
-- “Quiz me on Weeks 3–5, drawing on textbook exercises.”
+- “Quiz me on Weeks 4–5, drawing on textbook exercises.”
 
 ## 5. Add only relevant material
 
